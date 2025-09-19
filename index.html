@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just letting you know Iya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="exp-btn-container">
+        <button id="playMusicBtn" class="exp-btn">Click for a better experience</button>
+    </div>
+    <div class="divider"></div>
+    <audio id="bgMusic" src="DANIEL - 은방울 (Lily of the Valley).mp3" loop></audio>
+    <script>
+    document.getElementById('playMusicBtn').onclick = function() {
+        document.getElementById('bgMusic').play();
+        document.getElementById('loveText').style.display = 'block';
+        this.style.display = 'none';
+    };
+    </script>
+    <p class="desc">Welp im bored so i coded this for you</p>
+        <div class="heart-anim">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 54C30 54 7 36.5 7 21.5C7 12.5 15 7 22.5 7C27.5 7 30 11.5 30 11.5C30 11.5 32.5 7 37.5 7C45 7 53 12.5 53 21.5C53 36.5 30 54 30 54Z" fill="#ff6b81">
+                    <animate attributeName="fill" values="#ff6b81;#ffb86b;#ff6b81" dur="2s" repeatCount="indefinite" />
+                </path>
+            </svg>
+        </div>
+        <h1 class="main-title">Youre my Everything <span class="emoji">🥰</span> &lt;3</h1>
+    <script src="script.js"></script>
+    <div id="hearts-container"></div>
+    <div class="main-card enhanced-card">
+        <h1 id="loveText" style="display:none;">I love You so much</h1>
+    </div>
+    <div class="reasons-section">
+        <h2 class="reasons-title">Mga reasons ko kung bakit ko sya mahal</h2>
+        <div class="glass enhanced-card">
+        <ul>
+            <li>Siyempre, siya ang nagiging lakas ko – When I'm feeling down or lost, she's the one who lifts me up. Her support is something I can't take for granted.</li>
+            <li>Yung mga simpleng moments with her, priceless – Kahit sa mga simpleng bagay, like watching a movie or just talking about our day, it feels so special because she's the one I’m sharing it with.</li>
+            <li>She understands me like no one else – Parang kahit words can't explain, she knows exactly how I feel. There's a deep connection that no one else can give me.</li>
+            <li>She makes me a better version of myself – Laging may encouragement at inspiration galing sa kanya. She pushes me to do better and to reach for things I never thought I could.</li>
+            <li>She's my peace – Ang mga moments with her feel like home. No matter how chaotic life gets, when I’m with her, everything just makes sense.</li>
+            <li>Laughter and joy – Her sense of humor lightens up my days. Kahit pagod na ako, isang ngiti o tawa niya lang, okay na ako.</li>
+            <li>Her love gives me purpose – I’ve never felt so motivated to be the best version of myself. Her love gives me purpose and direction in life.</li>
+            <li>She's my safe space – I feel like I can be my true self with her. I can be vulnerable, and she’ll always be there to listen and support me without judgment.</li>
+            <li>Sobrang galing niyang mag-care – She really shows how much she cares, whether it’s through small gestures or just checking up on me. She makes me feel so valued.</li>
+            <li>She makes life better – With her, everything feels more colorful. From the big moments to the small, she makes life feel so much richer.</li>
+        </ul>
+        </div>
+    </div>
+    <div class="image-section">
+        <div class="img-row">
+            <img src="knight_and_lady.jpg" alt="Knight and Lady" class="main-img">
+        <button class="gif-btn" id="gifBtn">
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWFoZmp2ajRkOW82NDB3djJraDBsc2d3djI4NGdoZXlhbXNta2w0cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jtardUGpzO7D3Z4kpE/giphy.gif" alt="GIF Button" />
+        </button>
+        <div class="gif-modal" id="gifModal">
+                <div class="gif-modal-content" id="gifModalContent">
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWFoZmp2ajRkOW82NDB3djJraDBsc2d3djI4NGdoZXlhbXNta2w0cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jtardUGpzO7D3Z4kpE/giphy.gif" alt="GIF Large" />
+                </div>
+        </div>
+        <script>
+            const gifBtn = document.getElementById('gifBtn');
+            const gifModal = document.getElementById('gifModal');
+            const gifModalContent = document.getElementById('gifModalContent');
+            gifBtn.onclick = function() {
+                gifModal.style.display = 'flex';
+            };
+            gifModal.onclick = function(e) {
+                if (e.target === gifModal || e.target === gifModalContent) {
+                    gifModal.style.display = 'none';
+                }
+            };
+        </script>
+        </div>
+        <div class="caption">this could be us🥰</div>
+    </div>
+        <!-- Removed duplicate body tag -->
+    </html>
